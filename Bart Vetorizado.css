@@ -1,0 +1,53 @@
+svg.animate path {
+animation: svg-animate 4s forwards infinite;
+}
+@keyframes svg-animate {
+from {}
+to {
+stroke-dashoffset: 0;
+}
+}
+
+.container {
+width: 80%;
+margin: 40px auto;
+}
+
+body {
+background: #fff;
+}
+
+h1 {
+text-align: center;
+font-size: 2em;
+margin: 40px 0;
+font-family: monaco;
+color: #8844ee;
+}
+
+footer {
+text-align: center;
+margin: 40px;
+}
+
+#origamid {
+font-family: monaco;
+text-decoration: none;
+color: #8844ee;
+display: inline-block;
+}
+
+#origamid::after, #origamid::before {
+content: '';
+display: block;
+background: #8844ee;
+width: 0;
+height: 2px;
+border-radius: 4px;
+margin: 6px auto 6px auto;
+transition: all .2s ease;
+}
+
+#origamid:hover::after, #origamid:hover::before {
+width: 100%;
+}
